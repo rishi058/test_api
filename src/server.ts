@@ -9,7 +9,11 @@ app.get('/', (req, res) => {
 
 app.get('/path_1', (req, res) => {
     res.send('Hello World in Path 1');
-  });
+});
+
+app.get('/path_2', (req, res) => {
+  res.send('Hello World in Path 2');
+});
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
